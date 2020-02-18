@@ -1,5 +1,7 @@
 package animals;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("*** Animals ***");
@@ -22,6 +24,26 @@ public class Main {
         Fish Catfish = new Fish("Catfish", 1817, 18);
         Fish Perch = new Fish("Perch", 1758, 38);
         
+        ArrayList<AbstractAnimals> animalData = new ArrayList<AbstractAnimals>();
+
+        animalData.add(Panda);
+        animalData.add(Zebra);
+        animalData.add(Koala);
+        animalData.add(Sloth);
+        animalData.add(Armadillo);
+        animalData.add(Raccoon);
+        animalData.add(Bigfoot);
+        animalData.add(Pigeon);
+        animalData.add(Peacock);
+        animalData.add(Toucan);
+        animalData.add(Parrot);
+        animalData.add(Swan);
+        animalData.add(Salmon);
+        animalData.add(Catfish);
+        animalData.add(Perch);
+
+        System.out.println("\n%%% Animal List %%%");
+        System.out.println(animalData.toString());
 
     }
 }
