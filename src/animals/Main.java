@@ -59,5 +59,18 @@ public class Main {
 
         System.out.println("\n%%% Filter - breath with lungs %%%");
         animalData.forEach(a -> {if (a.getBreath() == "lungs") {System.out.println(a);}});
+
+        System.out.println("\n%%% Filter - breath with lungs %%%");
+        animalData.forEach(a -> {if (a.getBreath() == "lungs") {
+            System.out.println(a);
+            }
+        });
+
+        System.out.println("\n%%% Filter - breath with lungs and were named in 1758 %%%");
+        animalData.forEach(a -> {if (a.getBreath() == "lungs" && a.getYear() == 1758) {
+            System.out.println(a);
+            }
+        });
+
     }
 }
