@@ -49,5 +49,8 @@ public class Main {
         animalData.sort((a, b) -> Integer.compare(b.getYear(), a.getYear()));
         System.out.println(animalData.toString());
 
+        System.out.println("\n%%% Sorted alphabetically %%%");
+        animalData.sort((a, b) -> a.getName().compareToIgnoreCase(b.getName()));
+        System.out.println(animalData);
     }
 }
