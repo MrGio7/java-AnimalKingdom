@@ -6,16 +6,14 @@ public abstract class AbstractAnimals {
     protected String name;
     protected int yearNamed;
     protected int food;
-    protected String implement;
 
-    public AbstractAnimals(String name, int yearNamed, int food, String implement){
+    public AbstractAnimals(String name, int yearNamed, int food){
         maxId++;
         id = maxId;
 
         this.name = name;
         this.yearNamed = yearNamed;
         this.food = food;
-        this.implement = implement;
     }
 
     public abstract String getMove();
