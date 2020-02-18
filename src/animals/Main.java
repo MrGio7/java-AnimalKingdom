@@ -52,5 +52,9 @@ public class Main {
         System.out.println("\n%%% Sorted alphabetically %%%");
         animalData.sort((a, b) -> a.getName().compareToIgnoreCase(b.getName()));
         System.out.println(animalData);
+
+        System.out.println("\n%%% Sort by Categories %%%");
+        animalData.sort((a, b) -> a.getMove().compareToIgnoreCase(b.getMove()));
+        System.out.println(animalData);
     }
 }
