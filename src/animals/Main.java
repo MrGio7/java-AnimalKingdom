@@ -72,5 +72,11 @@ public class Main {
             }
         });
 
+        System.out.println("\n%%% Filter - lay eggs and breath with lungs %%%");
+        animalData.forEach(a -> {if (a.getReproduce() == "eggs" && a.getBreath() == "lungs") {
+            System.out.println(a);
+            }
+        });
+
     }
 }
