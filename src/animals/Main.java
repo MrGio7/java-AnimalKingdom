@@ -78,5 +78,13 @@ public class Main {
             }
         });
 
+        System.out.println("\n%%% List alphabetically only those animals that were named in 1758 %%%");
+        ArrayList<AbstractAnimals> filteredArray = new ArrayList<AbstractAnimals>();
+        animalData.forEach(a -> {if (a.getReproduce() == "eggs" && a.getBreath() == "lungs") {
+            filteredArray.add(a);
+            }
+        });
+        filteredArray.sort((a, b) -> a.getName().compareToIgnoreCase(b.getName()));
+        System.out.println(filteredArray);
     }
 }
