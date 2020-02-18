@@ -56,5 +56,8 @@ public class Main {
         System.out.println("\n%%% Sort by Categories %%%");
         animalData.sort((a, b) -> a.getMove().compareToIgnoreCase(b.getMove()));
         System.out.println(animalData);
+
+        System.out.println("\n%%% Filter - breath with lungs %%%");
+        animalData.forEach(a -> {if (a.getBreath() == "lungs") {System.out.println(a);}});
     }
 }
