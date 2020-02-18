@@ -86,5 +86,10 @@ public class Main {
         });
         filteredArray.sort((a, b) -> a.getName().compareToIgnoreCase(b.getName()));
         System.out.println(filteredArray);
+
+        System.out.println("\n%%% list alphabetically those animals that are mammals %%%");
+        animalData.forEach(a -> {if (a instanceof Mammals) {
+            System.out.println(a);
+        }});
     }
 }
