@@ -1,15 +1,12 @@
 package animals;
 
 public class Fish extends AbstractAnimals {
-    private String reproduce;
-    public String move;
-    public String breath;
+    private String reproduce = "eggs";
+    public String move = "swim";
+    public String breath = "gills";
 
-    public Fish(String name, int yearNamed, int food, String reproduce, String move, String breath) {
+    public Fish(String name, int yearNamed, int food) {
         super(name, yearNamed, food);
-        this.reproduce = "eggs";
-        this.breath = "gills";
-        this.move = "swim";
     }
 
     public String getReproduce() {

@@ -1,15 +1,12 @@
 package animals;
 
 public class Mammals extends AbstractAnimals {
-    private String reproduce;
-    public String move;
-    public String breath;
+    private String reproduce = "live births";;
+    public String move = "lungs";;
+    public String breath = "walk";;
 
-    public Mammals(String name, int yearNamed, int food, String reproduce, String move, String breath) {
+    public Mammals(String name, int yearNamed, int food) {
         super(name, yearNamed, food);
-        this.reproduce = "live births";
-        this.breath = "lungs";
-        this.move = "walk";
     }
 
     public String getReproduce() {
