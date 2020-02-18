@@ -1,6 +1,6 @@
 package animals;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,6 +43,10 @@ public class Main {
         animalData.add(Perch);
 
         System.out.println("\n%%% Animal List %%%");
+        System.out.println(animalData.toString());
+
+        System.out.println("\n%%% Sorted by Year %%%");
+        animalData.sort((a, b) -> Integer.compare(b.getYear(), a.getYear()));
         System.out.println(animalData.toString());
 
     }
